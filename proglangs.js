@@ -1,6 +1,22 @@
-function progLang()
+function ikkeFerdig(sidenavn)
 {
-var mylist=document.getElementById("myList");
-document.getElementById("program").value=mylist.options[mylist.selectedIndex].text;
+	document.getElementById("maintext")
+	.innerHTML="<br>Beklager men "+(sidenavn)+" sortering er under arbeid og ikke ferdig.";
 }
 
+function progLang(pLang)
+{
+	
+	if (pLang)
+	{
+	document.getElementById("maintext")
+	.innerHTML="<br>Du har valgt programmeringspråket "+(pLang);
+	}
+	//Hvis de har valgt blankt (sannsynligvis etter å allerede ha valgt f.eks BASIC)
+	//Vil siden bli lastet inn på nytt igjen, altså samme effekten som å klikke på
+	//home-knappen og få tilbake den original teksten.
+	else
+	{
+	window.open('Proglangs.html','_parent');
+	}
+}

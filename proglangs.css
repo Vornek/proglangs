@@ -1,7 +1,61 @@
-body {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  font-size: 12px;
-  background: #C0C0C0;
-  text-align: center;
-}
+body
+	{
+	padding-left: 13em;
+	background-color: #3CA0D0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	/*dette gjør at siden ikke overlapper med menybaren.
+	Det setter bakgrunnsfargen til lyseblå (#3CA0D0)
+	og det bestemmer hvilket fonter teskten på siden skal bruke*/
+	}
+
+ul.menubar
+	{
+	position: absolute;
+	top:	2em;
+	left:	1em;
+	width: 	9em;
+	/*Dette tvinger menybaren til å alltid være på venstre side av vinduet,
+	det bestemmer også hvor bred menybaren er
+	(9 em betyr 9 ganger større enn fontstørrelsen)*/
+	
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	}
+	
+ul.menubar li
+	{
+	background: orange;
+	/*gjør bakgrunnen til meny valgene oransje*/
+	margin: 0.5em 0;
+	/*skaper et mellomrom mellom valgene i menyen*/
+	padding: 0.3em;
+	/*skaper en liten "vegg" på høyre siden av menyvalgene*/
+	border-right: 1em solid black;
+	/*farger "veggen" helt svart*/
+	}	
+ul.menubar a
+	{
+	text-decoration: none;
+	/*Sørger for at det ikke er noe spesielt gjort med teksten (underlinjer, fet tekst etc)*/
+	}
+a:link
+	{
+	color:blue
+	/*Gjør linker du ikke har trykket på til blå (som er standard fra før av)*/
+	}
+a:visited
+	{
+	color:purple
+	/*Gjør linker du har trykket på til lilla (som er standard fra før av)*/
+	}
+adress
+	{
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top:thin dotted;
+	/*border-top lager en stripe med prikker for å avgrense "signaturen" ifra resten av siden
+	margin-top og padding-top sørger for at ikke noe annet havner på samme sted som prikkene
+	(slik at ingenting vil dekke over noe annet)
+	*/
+	}

@@ -1,43 +1,14 @@
-0)
-Javascript kan brukes til mye
+MVC
+Model View Controller
+(siden ordene er uttrykk vil de ikke vÃ¦re oversatt til norsk i beskrivelsen under)
 
-1)
-ID kan bare bli brukt for en unik ting. et enkelt paragraf eller lignende.
-Class kan bli brukt på flere elementer. For eksempel hvis alle "viktige"
-elementer skal være skrevet med rødt.
+Brukeren gÃ¥r inn pÃ¥ siden og ser dermed Viewen. Hver gang brukeren trykker pÃ¥ en av
+hyperlinkene eller velger et programmeringssprÃ¥k fra drop-down menyen.
+Tar brukeren...i bruk, Controlleren. Controlleren informerer Modelen
+(i dette tilfelle via javascriptfunksjoner) om endringer, Modelen tolker den nye informasjonen
+og oppdaterer View om hva som skal vises.
 
-2)
-Deloppgave 0 lar deg enklere se alle de forskjellige elementene.
-Hvis man tar fargene med i beregningen gjør det denne listen mye vanskeligere
-å se alt tydelig. Siden listen i eksempelet vil ha over 100 elementer,
-vil det ta veldig mye plass og kan være vanskelig å finne ett spesifikt
-element uten å bruke find funksjonene i leseren. Det vil være spesielt
-vanskelig hvis koderen ikke har alfabetisert elementene riktig.
-
-Deloppgave 1 tar mye, mye mindre plass. Men det er mye enklere å finne
-spesifike elementer hvis du vet hva du leter etter siden du kan trykke
-på de første bokstavene i det du leter etter og den vil hoppe ned til
-den bokstaven i listen.
-
-3)
-De har lagd en alfabetisert liste med alle programmeringspråkene 
-de har en contentdiv med "bokstavlinker" disse lar deg hoppe fram
-til den valgte bokstaven i listen.
-
-4)
-Forskjellen mellom span og div taggene er at div er en type "boks" som
-vi skriver informasjon i. Span taggen er noe vi plasserer i et mindre
-område som for eksempel en enkelt linje eller et enkelt paragraf.
-Det paragrafet eller linjen kan igjen være lagret inne i en div boks.
-
-5)
-Du må ha en default blank option for at "you have slected" feltet
-skal ha noe meningsfylt før du i det hele tatt har valgt noe.
-
-
-6)
-Fikk det ikke helt til selv. men man kan ha en for eksempel javascript
-til å kjøre en funksjon når du har valgt elementet i listen.
-denne funksjonen vil skrive:
-<a href="http://www.url_til_wikipedia-artikkel">Navn_på_valgt_språk</a>
+View (selve html siden, css styleringen o.l.)
+Controller (linker, javascript etc.)
+Model (server siden blir hostet pÃ¥, nettleser til bruker som tolker informasjonenen e.l.)
 

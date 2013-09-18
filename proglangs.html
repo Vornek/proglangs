@@ -1,103 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IS 104 Lekse</title>
-	<link rel="stylesheet" type="text/css" href="proglangs.css" />
-
-	<script src="proglangs.js"></script>
-
+	<title>Infoside om programmeringspr√•k</title>
+	<script src="Proglangs.js"></script>
+	<link rel="stylesheet" type="text/css" href="Proglangs.css">
+	<meta charset="utf-8">
 </head>
+<body class="omnipresentbody">
 
-<body>
-	<h1>
-	Oppgave 0
-	<br></h1>
-	
-	<style type="text/css">
-	pa 	{color:red;}
-	pb 	{color:blue;}
-	pc 	{color:green;}
-	pefg	{color:yellow;}
-	phj	{color:black;}
-	plp	{color:orange;}
-	prs 	{color:purple;}
-	</style> 
-<!--Bruker denne CSS koden til Â forandre pÂ fargen pÂ alle
-paragrafene. <p> er standard paragraf, man kan legge pÂ ekstra tegn
-for Â skille paragrafene fra hverandre. eks: <p1>
-som et tilbakeblikk hadde det vÊrt smartere Â kalle paragrefene med tall
-istedenfor med bokstaver.
--->
-	
-	<pa>
-	<li>ActionScript	<br></li>
-	<li>AppleScript		<br></li>
-	<li>Asp			<br></li>
-	</pa><pb>
-	<li>BASIC		<br></li>
-	</pb><pc>
-	<li>C			<br></li>
-	<li>C++			<br></li>
-	<li>Clojure		<br></li>
-	<li>COBOL		<br></li>
-	<li>ColdFusion		<br></li>
-	</pc><pefg>
-	<li>Erlang		<br></li>
-	<li>Fortran		<br></li>
-	<li>Groovy		<br></li>
-	</pefg><phj>
-	<li>Haskell		<br></li>
-	<li>Java		<br></li>
-	<li>Javascript		<br></li>
-	</phj><plp>
-	<li>Lisp		<br></li>
-	<li>Perl		<br></li>
-	<li>PHP			<br></li>
-	<li>Python		<br></li>
-	</plp><prs>
-	<li>Ruby		<br></li>
-	<li>Scala		<br></li>
-	<li>Scheme		<br></li>
-	</prs>		
-	</p2>
+	<ul class="menubar">
+		<li><a href="Proglangs.html">Hjem</a></li>
+		<li><a href="#" onclick="ikkeFerdig('kronologisk')">Kronologisk</a></li>
+		<li><a href="#" onclick="ikkeFerdig('hierarkisk')">Hierarkisk</a></li>
+		<li><a href="#" onclick="ikkeFerdig('alfabetisk')">Alfabetisk</a></li>
+	</ul>
 
-	<h1>
-	Oppgave 1
-	<h1>
 
-	<form action="oppg1_form.asp" method="post/get">
-	<select>
-	<option>ActionScript</option>
-	<option>Applescript</option>
-	<option>Asp</option>
-	<option>BASIC</option>
-	<option>C</option>
-	<option>C++</option>
-	<option>Clojure</option>
-	<option>COBOL</option>
-	<option>ColdFusion</option>
-	<option>Erlang</option>
-	<option>Fortran</option>
-	<option>Groovy</option>
-	<option>Haskell</option>
-	<option>Java</option>
-	<option>Javascript</option>
-	<option>Lisp</option>
-	<option>Perl</option>
-	<option>PHP</option>
-	<option>Python</option>
-	<option>Ruby</option>
-	<option>Scala</option>
-	<option>Scheme</option>
-	</select>
-
-</form>
-	<h1>
-	Oppgave 2
-	<h1>
-
+<div class="maindiv">
 	<form>
-	<select id="myList" onchange="progLang()">
+	<select id="programlang" onchange="progLang(this.value)">
 	<option></option>
 	<option>ActionScript</option>
 	<option>Applescript</option>
@@ -122,11 +43,21 @@ istedenfor med bokstaver.
 	<option>Scala</option>
 	<option>Scheme</option>
 	</select>
+	</form>
 
-<p>You have selected:
-<input type="text" id="program" size="13">
-</p>
-</form>
+<span id="maintext">
+<h1>This is a styled page<br></h1>
+<p>
+<br>
+It was made by me<br>
+<br>
+<br>
+<br>
+<adress>
+Made 16th september
+by "Mister Bj√∏rn Dale" (A.K.A. "That guy with the hat and glasses")</adress>
+</p></span>
+
+</div>
 </body>
 </html>
-
