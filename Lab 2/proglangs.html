@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Infoside om programmeringspråk</title>
-	<script src="Proglangs.js"></script>
-	<link rel="stylesheet" type="text/css" href="Proglangs.css">
-	<meta charset="utf-8">
+	<title>Infoside om programmeringspråk - Lab2</title>
+	<script src="proglangs.js"></script>
+	<link rel="stylesheet" type="text/css" href="proglangs.css">
+	<meta charset="UTF-8">
 </head>
 <body class="omnipresentbody">
-
-	<ul class="menubar">
-		<li><a href="Proglangs.html">Hjem</a></li>
-		<li><a href="#" onclick="ikkeFerdig('kronologisk')">Kronologisk</a></li>
-		<li><a href="#" onclick="ikkeFerdig('hierarkisk')">Hierarkisk</a></li>
-		<li><a href="#" onclick="ikkeFerdig('alfabetisk')">Alfabetisk</a></li>
-	</ul>
-
-
+<ul class="menubar">
+	<li><a href="Proglangs.html">Hjem</a></li>
+	<li><a href="#" onclick="ikkeFerdig('kronologisk')">Kronologisk</a></li>
+	<li><a href="#" onclick="ikkeFerdig('hierarkisk')">Hierarkisk</a></li>
+	<li><a href="#" onclick="ikkeFerdig('alfabetisk')">Alfabetisk</a></li>
+</ul>
 <div class="maindiv">
-	<form>
+ 	<form>
+
 	<select id="programlang" onchange="progLang(this.value)">
 	<option></option>
 	<option>ActionScript</option>
@@ -43,20 +41,23 @@
 	<option>Scala</option>
 	<option>Scheme</option>
 	</select>
-	</form>
 
+	
+
+
+</form>
+
+<br>
 <span id="maintext">
-<h1>This is a styled page<br></h1>
-<p>
-<br>
+<h1>Dette er en sidemed programmeringspråk</h1>
+</span>
+<p><br>
 It was made by me<br>
-<br>
-<br>
-<br>
+<br><br><br>
 <adress>
-Made 16th september
+Made 10th october
 by "Mister Bjørn Dale" (A.K.A. "That guy with the hat and glasses")</adress>
-</p></span>
+</p>
 
 </div>
 </body>

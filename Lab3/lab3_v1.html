@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hendelser med jQuery</title>
+	<link rel="stylesheet" type="text/css" href="lab3_v1.css" />
+	<script src="js/jquery-1.8.1.js"></script>
+    <script>
+	
+	$(function() {
+		// Setter en "observatør" for keydown hendelse på noden document.body
+	    $(document.body).on('keydown', function(e) {
+		
+		// Sorterer ut de tastetrykkene man ønsker å gi en respons på
+		// Her brukes det en struktur switch som finnes i de fleste programmeringsspråk
+		switch (e.which) {
+			// tastekode for venstre pil; responsen er en utskrift til konsollen (innebygd i nettlesere)
+			case 37:
+				// Her og i andre case skal koden for å skrive til innerHTML skrives (deloppgave 0)
+				console.log( 'Tast trykket: pil venstre' );
+				document.getElementById("tasttrykket").innerHTML="Tast trykket: pil venstre";
+				$("#tasttrykket").removeClass();				
+				$("#tasttrykket").addClass("blue");
+				break;
+        
+			// tastekode for høyre pil
+			case 39:
+				console.log( 'Tast trykket: pil høyre' );
+				document.getElementById("tasttrykket").innerHTML="Tast trykket: pil høyre";
+				$("#tasttrykket").removeClass();				
+				$("#tasttrykket").addClass("red");				
+				break;
+
+
+			// Her står koden for å behandle pil opp og ned (deloppgave 0)				
+			// tastekode for pil opp
+			case 38:
+				console.log( 'Tast trykket: pil opp' );
+				document.getElementById("tasttrykket").innerHTML="Tast trykket: pil opp";
+				$("#tasttrykket").removeClass();
+				$("#tasttrykket").addClass("green");
+				break;
+			
+			// tastekode for pil ned
+			case 40:
+				console.log( 'Tast trykket: pil ned' );
+				document.getElementById("tasttrykket").innerHTML="Tast trykket: pil ned";
+				$("#tasttrykket").removeClass();
+				$("#tasttrykket").addClass("orange");
+				break;
+
+		}
+		});
+	});
+	
+	
+	
+	</script>
+</head>
+<body>
+	<p>Testside for å "fange" hendelser fra tastatur.</p>
+	<p>
+		<ul>
+			<li>Bruk helst Google Chrome (norsk versjon).</li> 
+			<li>Trykk høyre museknapp og velg "Inspiser element".</li> 
+			<li>Velg "Console" fra hjelpeverktøyets hovedmenyen.</li>
+		</ul>
+	</p>
+	<p id="tasttrykket">Tast trykket: </p>
+	<!-- Oppgaveløsning skal implementeres her -->
+</body>
+</html>

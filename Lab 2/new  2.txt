@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IS 104 - Lab1</title>
+<link rel="stylesheet" type="text/css" href="proglangs.css" />
+
+	<script src="proglangs.js"></script>
+
+</head>
+
+<body>
+	<h1>
+	Oppgave 0
+	<br></h1>
+	
+	<style type="text/css">
+	pa 	{color:red;}
+	pb 	{color:blue;}
+	pc 	{color:green;}
+	pefg	{color:yellow;}
+	phj	{color:black;}
+	plp	{color:orange;}
+	prs 	{color:purple;}
+	</style> 
+<!--Bruker denne CSS koden til � forandre p� fargen p� alle
+paragrafene. <p> er standard paragraf, man kan legge p� ekstra tegn
+for � skille paragrafene fra hverandre. eks: <p1>
+som et tilbakeblikk hadde det v�rt smartere � kalle paragrefene med tall
+istedenfor med bokstaver.
+-->
+	
+	<pa>
+	<li>ActionScript	<br></li>
+	<li>AppleScript		<br></li>
+	<li>Asp			<br></li>
+	</pa><pb>
+	<li>BASIC		<br></li>
+	</pb><pc>
+	<li>C			<br></li>
+	<li>C++			<br></li>
+	<li>Clojure		<br></li>
+	<li>COBOL		<br></li>
+	<li>ColdFusion		<br></li>
+	</pc><pefg>
+	<li>Erlang		<br></li>
+	<li>Fortran		<br></li>
+	<li>Groovy		<br></li>
+	</pefg><phj>
+	<li>Haskell		<br></li>
+	<li>Java		<br></li>
+	<li>Javascript		<br></li>
+	</phj><plp>
+	<li>Lisp		<br></li>
+	<li>Perl		<br></li>
+	<li>PHP			<br></li>
+	<li>Python		<br></li>
+	</plp><prs>
+	<li>Ruby		<br></li>
+	<li>Scala		<br></li>
+	<li>Scheme		<br></li>
+	</prs>		
+	</p2>
+
+	<h1>
+	Oppgave 1
+	<h1>
+
+	<form action="oppg1_form.asp" method="post/get">
+	<select>
+	<option>ActionScript</option>
+	<option>Applescript</option>
+	<option>Asp</option>
+	<option>BASIC</option>
+	<option>C</option>
+	<option>C++</option>
+	<option>Clojure</option>
+	<option>COBOL</option>
+	<option>ColdFusion</option>
+	<option>Erlang</option>
+	<option>Fortran</option>
+	<option>Groovy</option>
+	<option>Haskell</option>
+	<option>Java</option>
+	<option>Javascript</option>
+	<option>Lisp</option>
+	<option>Perl</option>
+	<option>PHP</option>
+	<option>Python</option>
+	<option>Ruby</option>
+	<option>Scala</option>
+	<option>Scheme</option>
+	</select>
+
+</form>
+	<h1>
+	Oppgave 2
+	<h1>
+
+	<form>
+	<select id="myList" onchange="progLang()">
+	<option></option>
+	<option>ActionScript</option>
+	<option>Applescript</option>
+	<option>Asp</option>
+	<option>BASIC</option>
+	<option>C</option>
+	<option>C++</option>
+	<option>Clojure</option>
+	<option>COBOL</option>
+	<option>ColdFusion</option>
+	<option>Erlang</option>
+	<option>Fortran</option>
+	<option>Groovy</option>
+	<option>Haskell</option>
+	<option>Java</option>
+	<option>Javascript</option>
+	<option>Lisp</option>
+	<option>Perl</option>
+	<option>PHP</option>
+	<option>Python</option>
+	<option>Ruby</option>
+	<option>Scala</option>
+	<option>Scheme</option>
+	</select>
+
+<p>You have selected:
+<input type="text" id="program" size="13">
+</p>
+</form>
+</body>
+</html>
