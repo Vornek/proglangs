@@ -1,0 +1,66 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+#bodyDiv{
+	width:415px;
+	height:500px;
+	margin:0 auto;
+	border:1px solid #3285ef;
+}
+
+#bodyDiv.glossaryDiv{
+	clear:both; /*Dette vil ikke tillate noen elementer som flyter på noen av sidene*/
+}
+
+#bodyDiv.contentDiv{
+	height:430px;
+	width:415px;
+	overflow:auto; /*Et rullefelt vises når inneholdet er større en den spesifiserte høyden*/
+	font-family:"Arial",Verdana,Tahoma;
+	font-size:10pt;
+	clear:both;
+}
+
+#bodyDiv.contentDiv div{
+	padding-left:10px;
+	border-bottom:1px #666666 solid;
+	/*For å adskille hver gruppe gjøres nedre rammeside til grå og 1px stor*/
+	/*merk: border bottom pixelstørrele virker ikke av ukjent grunn. fant ikke løsning på dette*/
+}
+
+/*
+#bodyDiv.contentDiv p.returnToTop
+virket ikke. Vet ikke hvorfor*/
+p.returnToTop{
+	color:#0066FF; /*Tekstfarge*/
+	text-decoration:underline;
+	text-align:right;
+	margin-right:10px;
+	cursor:pointer;	
+}
+
+.firstUL{
+	padding: 0px 0px 0px 10px; /*Sortert klokkevis, starter med toppen*/
+	margin:0px;
+	background-color: #3285ef;
+}
+
+.firstUL li{
+	background: transparant url(../images/link_sprite_img.jpg) no-repeat scroll 0 0;
+	display: inline; /*utlistingene vil bli satt på en rad*/
+	font-family: "Arial",Verdana,Tahoma;
+	font-size:16pt;
+	font-weight:bold;
+	padding:10px 15px 22px;
+	line-height:70px;
+	cursor:pointer;
+}
+
+.firstUL li.selected{
+	background: transparant url(../images/link_sprite_img.jpg) no-repeat scroll 0 -57px;
+	color: #ffffff; /*Hvit/White*/
+	font-weight: bold;
+}
+
