@@ -48,7 +48,7 @@ p.returnToTop{
 }
 
 .firstUL li{
-	background: transparant url(../images/link_sprite_img.jpg) no-repeat scroll 0 0;
+	background: transparent url(images/link_sprite_img.jpg) no-repeat scroll 0 0;
 	display: inline; /*utlistingene vil bli satt på en rad*/
 	font-family: "Arial",Verdana,Tahoma;
 	font-size:16pt;
@@ -59,7 +59,7 @@ p.returnToTop{
 }
 
 .firstUL li.selected{
-	background: transparant url(images/link_sprite_img.jpg) no-repeat scroll 0 -57px;
+	background: transparent url(images/link_sprite_img.jpg) no-repeat scroll 0 -57px;
 	color: #ffffff; /*Hvit/White*/
 	font-weight: bold;
 }
