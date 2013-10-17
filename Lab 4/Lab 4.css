@@ -59,7 +59,7 @@ p.returnToTop{
 }
 
 .firstUL li.selected{
-	background: transparant url(../images/link_sprite_img.jpg) no-repeat scroll 0 -57px;
+	background: transparant url(images/link_sprite_img.jpg) no-repeat scroll 0 -57px;
 	color: #ffffff; /*Hvit/White*/
 	font-weight: bold;
 }
