@@ -10,11 +10,11 @@ body{
 	border:1px solid #3285ef;
 }
 
-#bodyDiv.glossaryDiv{
+#bodyDiv .glossaryDiv{
 	clear:both; /*Dette vil ikke tillate noen elementer som flyter på noen av sidene*/
 }
 
-#bodyDiv.contentDiv{
+#bodyDiv .contentDiv{
 	height:430px;
 	width:415px;
 	overflow:auto; /*Et rullefelt vises når inneholdet er større en den spesifiserte høyden*/
@@ -23,17 +23,14 @@ body{
 	clear:both;
 }
 
-#bodyDiv.contentDiv div{
+#bodyDiv .contentDiv div{
 	padding-left:10px;
 	border-bottom:1px #666666 solid;
 	/*For å adskille hver gruppe gjøres nedre rammeside til grå og 1px stor*/
 	/*merk: border bottom pixelstørrele virker ikke av ukjent grunn. fant ikke løsning på dette*/
 }
 
-/*
-#bodyDiv.contentDiv p.returnToTop
-virket ikke. Vet ikke hvorfor*/
-p.returnToTop{
+#bodyDiv .contentDiv p.returnToTop{
 	color:#0066FF; /*Tekstfarge*/
 	text-decoration:underline;
 	text-align:right;
